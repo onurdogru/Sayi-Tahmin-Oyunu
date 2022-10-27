@@ -1,0 +1,131 @@
+html{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: sans-serif;
+    color: blue;
+    background-color: cadetblue;
+}
+
+header
+{
+    position: relative; /*Relative yapmamızın nedeni, bir kalıp olarak algılaması.*/
+    height: 35vh;
+    border-bottom: 7px solid coral;
+
+}
+
+main 
+{
+    height: 65vh;
+    color:blueviolet;
+    display: flex; /*düzetlme*/
+    align-items: center; 
+    justify-content: space-around; /*Bu kod satırı, class'lar(panel)arasında yukardan-aşağıdan-sagdan-soldan eşit aralıklar bırakarak araları açar. ###ÖNEMLİ### */
+     
+}
+
+.left
+{
+width: 52rem;
+display: flex;
+flex-direction: column; /*Satırı boydan boya doldurmak için kullanılır. */
+align-items: center;
+
+}
+
+.right
+{
+width: 52rem;
+font-size: larger;
+
+}
+
+.between
+{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+}
+
+.again
+{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+}
+
+h1
+{
+font-size: 4rem;
+text-align: center; /*yazıyı sayfaya ortalıyor*/
+position: absolute;
+width: 100%;
+top: 52%;
+left: 50%;
+transform: translate(-50%, -50%); /*Kutuyu Ortalama*/
+
+}
+
+.number
+{
+    background-color: burlywood;
+    color: darkblue;
+    font-size: larger;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.guess
+{
+    background: none;
+    color: rgb(255, 0, 221);
+    border: 4px solid cornsilk;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 2.5rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    
+}
+
+.btn 
+{
+    border: none;
+    background-color: chartreuse;
+    color: crimson;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    cursor: pointer; /*Mouse il butonun üstüne gelince, mouse buton oldugunu algılıyor. ###ÖNEMLİ###*/
+    
+
+}
+
+
+.btn:hover{
+    background-color: darkgreen;
+
+}
+
+.message
+{
+    margin-bottom: 8rem;
+    height: 3rem;
+
+}
+.label{
+    margin-bottom: 2rem;
+
+}

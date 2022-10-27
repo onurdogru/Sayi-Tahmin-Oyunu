@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!--1.ADIM : Sayfayı 2'ye böldüğümüzü varsayalım. Body etiketimizin içine header ve main etiketlerini açarız-->
+<body>
+    <header>
+        <!--1.ADIM : Header Details-->
+            <h1>Sayı Tahmin Et!</h1>
+            <p class="between">(1-20 arası)</p>
+            <button class="btn again">Tekrar Başlat</button>
+            <div class="number">?</div>
+
+    </header>
+
+    <main>
+        <!--2.ADIM : Main kısmını da 2'ye böldüğümüzü düşünelim-->
+        <section class="left">
+            <input class="guess" type="number"> <!--Input dediğimiz, sayı girmemiz için bir pencere oluştururuz.-->
+            <button class="btn check">Kontrol Et</button>
+        </section>
+
+        <section class="right">
+            <p class="message">Tahmin Ediliyor!</p>
+            <p class="label-score">Skor : 20</p>
+            <p class="label-highscore">En Yüksek Skor: 0</p>
+        </section>
+
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
